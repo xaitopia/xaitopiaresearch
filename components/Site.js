@@ -1,5 +1,5 @@
 'use client';
-import {useEffect,useState} from 'react';import Link from 'next/link';
+import {useEffect,useState} from 'react';import Link from 'next/link';import Nav from './Nav';
 const NL='https://mindcrafteduniverse.substack.com';
 const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 function fresh(key,items){let a=shuf(items);try{const last=localStorage.getItem('last-'+key);if(a.length>1&&a[0].slug===last)[a[0],a[1]]=[a[1],a[0]];if(a[0])localStorage.setItem('last-'+key,a[0].slug);}catch(e){}return a;}
@@ -29,8 +29,7 @@ export default function Site({poems,articles,fiction}){
   const mk=mode==='market';
   const ov=sw&&(<div className="sweep" data-mode={sw} aria-hidden="true">{sw==='market'?<Candles/>:<p>At 2 AM the world closes its eyes<br/>and pretends it cannot hear you.</p>}</div>);
   const head=(<header><Link href="/" className="brand" onClick={()=>{try{localStorage.removeItem('mode');}catch(e){}}}><img src="/logo.png" alt="Xaitopia Research" className="bm"/><span><b>Xaitopia Research</b><i>Emmanuel Chukwu</i></span></Link>
-    <button className="burger" aria-label="Toggle menu" aria-expanded={open} onClick={()=>setOpen(!open)}><span/><span/><span/></button>
-    <nav className={open?'open':''} onClick={()=>setOpen(false)}>{mk?<><Link href="/writing">Research</Link><Link href="/quant/tradingview">Pine Script</Link><Link href="/quant/mql5">MQL5</Link><Link href="/about">About</Link><Link href="/newsletter/financial">Newsletter</Link></>:<><Link href="/poetry">Poetry</Link><Link href="/fiction">Fiction</Link><Link href="/about">About</Link><Link href="/newsletter/creative">Newsletter</Link></>}</nav>
+    <Nav mode={mk?'market':'page'}/>
     <div className="toggle"><button aria-pressed={mk} onClick={()=>pick('market')}>MARKET</button><button aria-pressed={!mk} onClick={()=>pick('page')}>PAGE</button></div></header>);
   const move=e=>setM([e.clientX,e.clientY]);
   if(mk){const [L,...r]=p.articles;return(<div className="wrap" data-mode="market" onMouseMove={move}>{head}{ov}
