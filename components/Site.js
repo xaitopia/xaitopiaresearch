@@ -18,14 +18,14 @@ export default function Site({poems,articles,fiction}){
   const mk=mode==='market';
   const ov=sw&&(<div className="sweep" data-mode={sw} aria-hidden="true">{sw==='market'?<Candles/>:<p>At 2 AM the world closes its eyes<br/>and pretends it cannot hear you.</p>}</div>);
   const head=(<header><Link href="/" className="logo" onClick={()=>{try{localStorage.removeItem('mode');}catch(e){}}}>XAITOPIA</Link>
-    <nav>{mk?<><Link href="/writing">Research</Link><Link href="/about">About</Link><Link href="/newsletter/financial">Newsletter</Link></>:<><Link href="/poetry">Poetry</Link><Link href="/fiction">Fiction</Link><Link href="/about">About</Link><Link href="/newsletter/creative">Newsletter</Link></>}</nav>
+    <nav>{mk?<><Link href="/writing">Research</Link><Link href="/quant/tradingview">Pine Script</Link><Link href="/quant/mql5">MQL5</Link><Link href="/about">About</Link><Link href="/newsletter/financial">Newsletter</Link></>:<><Link href="/poetry">Poetry</Link><Link href="/fiction">Fiction</Link><Link href="/about">About</Link><Link href="/newsletter/creative">Newsletter</Link></>}</nav>
     <div className="toggle"><button aria-pressed={mk} onClick={()=>pick('market')}>MARKET</button><button aria-pressed={!mk} onClick={()=>pick('page')}>PAGE</button></div></header>);
   const move=e=>setM([e.clientX,e.clientY]);
   if(mk){const [L,...r]=p.articles;return(<div className="wrap" data-mode="market" onMouseMove={move}>{head}{ov}
     <div className="xh v" style={{left:m[0]}}/><div className="xh h" style={{top:m[1]}}/>
     <section className="cols"><div className="lead">{L&&<><small>{L.tags[0]||'RESEARCH'}</small><h1>{L.title}</h1><p>{L.description}</p><Link className="btn" href={`/writing/${L.slug}`}>READ THE PAPER →</Link></>}
       <div className="cards">{r.slice(0,2).map(a=><Link key={a.slug} href={`/writing/${a.slug}`}><small>{a.tags[0]}</small><b>{a.title}</b></Link>)}</div></div>
-      <aside><div className="panel"><div className="pt"><span>XAI HTF CANDLES</span><span>PINE SCRIPT</span></div><Candles/></div><div className="panel"><small>MQL5 · EXPERT ADVISOR</small>XAI_TBR_CISD_EA</div></aside></section></div>);}
+      <aside><div className="panel"><div className="pt"><span>XAI HTF CANDLES</span><span>PINE SCRIPT</span></div><Candles/></div><div className="panel"><small>MQL5 · EXPERT ADVISOR</small>XAI_TBR_CISD_EA</div></aside></section><section className="svc"><small>SERVICES</small><div className="svcg">{['White Papers|In-depth technical research documents for institutional and professional audiences.','Market Intelligence Reports|Data-informed editorial covering macro trends, sector analysis, and emerging markets.','Editorial Strategy|Content architecture and publishing strategy for financial media and research platforms.','Technical Finance Writing|Translating complex quantitative and market concepts into authoritative editorial content.'].map(t=>{const [a,b]=t.split('|');return <div key={a}><b>{a}</b><p>{b}</p></div>;})}</div><a className="btn" href="mailto:xaitopia@gmail.com">WORK WITH ME →</a></section></div>);}
   const [L,...r]=p.poems;const f=p.fiction[0];
   return(<div className="wrap" data-mode="page" onMouseMove={move}>{head}{ov}
     <section className="cols pg"><div className="meta">{L&&<>Poetry<br/>{L.date.slice(0,4)}<div className="tags">{L.tags.join(' · ')}</div></>}</div>

@@ -38,3 +38,8 @@ body:has([data-mode=page]){background:#efe7d6}
 @media(hover:none){.xh{display:none}}
 
 .nl{display:block;border:1px solid var(--ln);padding:24px;margin:0 0 16px}.nl small{margin-bottom:8px}.nl h2{font-size:28px;margin-bottom:10px}.nl p{color:var(--mu);font-size:15px;line-height:1.7;margin:0}
+
+.tools .card{border:1px solid var(--ln);padding:20px;margin-bottom:12px}.tools .card b{display:block;font-size:20px;font-weight:400;margin-bottom:6px}.tools .card p{font:13px/1.7 'IBM Plex Mono',monospace;color:var(--mu);margin:0 0 14px}
+.soon{font:11px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--ac)}.note{font:11px/1.7 'IBM Plex Mono',monospace;color:var(--mu);margin-top:32px}
+.svc{padding:0 clamp(24px,5vw,64px) 64px}.svcg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0 8px}.svcg div{border:1px solid var(--ln);padding:18px}.svcg b{font:400 17px 'Playfair Display',serif}.svcg p{font-size:12px;line-height:1.6;color:var(--mu);margin:8px 0 0}
+nav{flex-wrap:wrap;gap:10px 22px}
