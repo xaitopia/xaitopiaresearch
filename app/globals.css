@@ -43,3 +43,14 @@ body:has([data-mode=page]){background:#efe7d6}
 .soon{font:11px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--ac)}.note{font:11px/1.7 'IBM Plex Mono',monospace;color:var(--mu);margin-top:32px}
 .svc{padding:0 clamp(24px,5vw,64px) 64px}.svcg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0 8px}.svcg div{border:1px solid var(--ln);padding:18px}.svcg b{font:400 17px 'Playfair Display',serif}.svcg p{font-size:12px;line-height:1.6;color:var(--mu);margin:8px 0 0}
 nav{flex-wrap:wrap;gap:10px 22px}
+
+.cards a,.panel,.svcg div,.tools .card,.nl{transform:perspective(800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s,border-color .2s,box-shadow .2s;will-change:transform}
+.cards a:hover,.panel:hover,.svcg div:hover,.tools .card:hover,.nl:hover{border-color:var(--ac);box-shadow:0 0 26px color-mix(in srgb,var(--ac) 20%,transparent);background-image:radial-gradient(260px circle at var(--gx,50%) var(--gy,50%),color-mix(in srgb,var(--ac) 16%,transparent),transparent 70%)}
+.lc g{opacity:.65;transition:transform .2s,opacity .2s;transform-box:fill-box;transform-origin:center}.lc g.on{opacity:1;transform:scaleY(1.12)}.lc .pulse{animation:pulse 2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}
+.tick{display:flex;align-items:center;gap:20px;border-bottom:1px solid var(--ln);font-size:11px;letter-spacing:.08em;overflow:hidden}
+.clk{flex:0 0 auto;padding:12px 0 12px clamp(20px,4vw,56px);color:var(--ac);white-space:nowrap}
+.mq{overflow:hidden;flex:1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tk{display:flex;width:max-content;animation:tick 90s linear infinite}.mq:hover .tk{animation-play-state:paused}
+.tk a{padding:12px 20px;color:var(--mu);white-space:nowrap}.tk a::before{content:'\25C6';color:var(--ac);margin-right:14px;font-size:8px}.tk a:hover{color:var(--fg)}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tk,.lc .pulse{animation:none}}

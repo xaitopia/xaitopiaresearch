@@ -1,3 +1,3 @@
-import './globals.css';
+import './globals.css';import Fx from '../components/Fx';
 export const metadata={title:'Xaitopia',description:'Research, quant models, poetry and fiction by Xai.',icons:{icon:'/logo.png'}};
-export default function Root({children}){return(<html lang="en"><head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"/></head><body>{children}</body></html>);}
+export default function Root({children}){return(<html lang="en"><head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"/></head><body>{children}<Fx/></body></html>);}
