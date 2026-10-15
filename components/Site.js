@@ -18,7 +18,7 @@ export default function Site({poems,articles,fiction}){
   const mk=mode==='market';
   const ov=sw&&(<div className="sweep" data-mode={sw} aria-hidden="true">{sw==='market'?<Candles/>:<p>At 2 AM the world closes its eyes<br/>and pretends it cannot hear you.</p>}</div>);
   const head=(<header><Link href="/" className="logo" onClick={()=>{try{localStorage.removeItem('mode');}catch(e){}}}>XAITOPIA</Link>
-    <nav>{mk?<><Link href="/writing">Research</Link><Link href="/about">About</Link><a href={NL}>Newsletter</a></>:<><Link href="/poetry">Poetry</Link><Link href="/fiction">Fiction</Link><Link href="/about">About</Link><a href={NL}>Newsletter</a></>}</nav>
+    <nav>{mk?<><Link href="/writing">Research</Link><Link href="/about">About</Link><Link href="/newsletter/financial">Newsletter</Link></>:<><Link href="/poetry">Poetry</Link><Link href="/fiction">Fiction</Link><Link href="/about">About</Link><Link href="/newsletter/creative">Newsletter</Link></>}</nav>
     <div className="toggle"><button aria-pressed={mk} onClick={()=>pick('market')}>MARKET</button><button aria-pressed={!mk} onClick={()=>pick('page')}>PAGE</button></div></header>);
   const move=e=>setM([e.clientX,e.clientY]);
   if(mk){const [L,...r]=p.articles;return(<div className="wrap" data-mode="market" onMouseMove={move}>{head}{ov}

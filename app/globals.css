@@ -36,3 +36,5 @@ body:has([data-mode=page]){background:#efe7d6}
 .about .card{border:1px solid var(--ln);padding:16px 18px;margin-bottom:10px;font-size:15px;line-height:1.65;color:var(--mu)}.about .card b{display:block;margin-bottom:3px}
 .about .btn{margin:0 8px 8px 0}.about .gap{margin-top:40px}
 @media(hover:none){.xh{display:none}}
+
+.nl{display:block;border:1px solid var(--ln);padding:24px;margin:0 0 16px}.nl small{margin-bottom:8px}.nl h2{font-size:28px;margin-bottom:10px}.nl p{color:var(--mu);font-size:15px;line-height:1.7;margin:0}
