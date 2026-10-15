@@ -28,3 +28,11 @@ aside{flex:0 1 400px;min-width:260px}.panel{margin-bottom:14px;font-size:12px}.p
 body:has([data-mode=page]){background:#efe7d6}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 @media(max-width:700px){.split{flex-direction:column}.split .half{padding:64px 24px}}
+
+.sweep{position:fixed;inset:0;z-index:50;background:var(--bg);color:var(--fg);display:flex;align-items:center;justify-content:center;pointer-events:none;animation:sweep 1s ease both}
+.sweep .candles{width:min(420px,70vw);color:var(--ac)}.sweep p{font:italic clamp(22px,3vw,34px)/1.6 'Playfair Display',serif;text-align:center;padding:0 24px}
+@keyframes sweep{0%{clip-path:circle(0 at 85% 8%);opacity:1}45%{clip-path:circle(150% at 85% 8%)}75%{clip-path:circle(150% at 85% 8%);opacity:1}100%{clip-path:circle(150% at 85% 8%);opacity:0}}
+.about p{font-size:17px;line-height:1.85;color:var(--mu)}.about b{color:var(--fg);font-weight:500}.about .role{font:12px 'IBM Plex Mono';letter-spacing:.1em;color:var(--ac)}
+.about .card{border:1px solid var(--ln);padding:16px 18px;margin-bottom:10px;font-size:15px;line-height:1.65;color:var(--mu)}.about .card b{display:block;margin-bottom:3px}
+.about .btn{margin:0 8px 8px 0}.about .gap{margin-top:40px}
+@media(hover:none){.xh{display:none}}
