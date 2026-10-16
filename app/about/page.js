@@ -15,7 +15,7 @@ export default function About(){return(<Shell mode="market"><main className="rea
 <p>Whether drafting comprehensive white papers, structuring market intelligence reports, or refining high-level editorial for B2B financial audiences, I deliver content that moves past the noise and directly addresses sophisticated market participants.</p>
 <small className="gap">GET IN TOUCH</small>
 <p>For project enquiries, white papers, and editorial engagements — reach out directly.</p>
-<p><a className="btn" href="mailto:xaitopia@gmail.com">xaitopia@gmail.com</a></p>
+<p><Link className="btn" href="/contact">Send a message</Link> <a className="btn" href="mailto:xaitopia@gmail.com">xaitopia@gmail.com</a></p>
 <small className="gap">CREATIVE WORK</small>
 <p>Outside financial writing, I work in fiction, poetry, and longform essays under the name Xai.</p>
 <p><Link className="btn" href="/poetry">Poetry</Link> <Link className="btn" href="/fiction">Fiction</Link> <Link className="btn" href="/newsletter/creative">Newsletter</Link></p></main></Shell>);}

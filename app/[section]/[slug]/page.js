@@ -5,7 +5,7 @@ const LBL={writing:'Essay',poetry:'Poem',fiction:'Fiction'};
 export const dynamicParams=false;
 export function generateStaticParams(){return SECTIONS.flatMap(section=>list(section).map(i=>({section,slug:i.slug})));}
 export async function generateMetadata({params}){const p=await get(params.section,params.slug);
-  return {title:`${p.title} — Xaitopia`,description:p.description,openGraph:{title:p.title,description:p.description,type:'article'}};}
+  return {title:`${p.title} — Xaitopia`,description:p.description,openGraph:{title:p.title,description:p.description,type:'article',images:['/opengraph-image']}};}
 export default async function Entry({params}){const {section,slug}=params;const p=await get(section,slug);
   const L=list(section);const i=L.findIndex(x=>x.slug===slug);const older=L[i+1],newer=L[i-1];
   const g=G[section][p.words%G[section].length];const w=section==='writing';

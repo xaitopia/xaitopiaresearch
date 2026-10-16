@@ -3,8 +3,8 @@ import {useState} from 'react';import Link from 'next/link';
 const MK=[{n:'Financial Writing',h:'/writing'},
  {n:'Research & Intelligence',c:[['Bi-Weekly Market Intelligence','/research/market-intelligence'],['Macro & Data Analysis','/research/macro-analysis']]},
  {n:'Quantitative Models',c:[['TradingView — Pine Script','/quant/tradingview'],['MetaTrader — MQL5','/quant/mql5']]},
- {n:'Newsletter',h:'/newsletter/financial'},{n:'About',h:'/about'}];
-const PG=[{n:'Poetry',h:'/poetry'},{n:'Fiction',h:'/fiction'},{n:'Newsletter',h:'/newsletter/creative'},{n:'About',h:'/about'}];
+ {n:'Newsletter',h:'/newsletter/financial'},{n:'About',h:'/about'},{n:'Search',h:'/search'}];
+const PG=[{n:'Poetry',h:'/poetry'},{n:'Fiction',h:'/fiction'},{n:'Newsletter',h:'/newsletter/creative'},{n:'About',h:'/about'},{n:'Search',h:'/search'}];
 export default function Nav({mode}){const M=mode==='page'?PG:MK;const [open,setOpen]=useState(false);const [dd,setDd]=useState(null);
   const close=()=>{setOpen(false);setDd(null);};
   return(<><button className="burger" aria-label="Toggle menu" aria-expanded={open} onClick={()=>setOpen(!open)}><span/><span/><span/></button>
