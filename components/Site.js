@@ -28,16 +28,15 @@ export default function Site({poems,articles,fiction}){
   useEffect(()=>{setP({poems:fresh('poem',poems),articles:fresh('article',articles),fiction:fresh('fiction',fiction)});try{setMode(localStorage.getItem('mode'));}catch(e){}setReady(true);},[]);
   const commit=x=>{setMode(x);try{localStorage.setItem('mode',x);}catch(e){}};
   const pick=x=>{if(x===mode)return;if(!mode||window.matchMedia('(prefers-reduced-motion: reduce)').matches){commit(x);return;}setSw(x);setTimeout(()=>commit(x),450);setTimeout(()=>setSw(null),1000);};
-  if(!ready)return <div className="boot"/>;
-  if(!mode)return(<div className="split">
+  if(!ready||!mode)return(<div className="split">
     <button className="half" data-mode="market" onClick={()=>pick('market')}><span className="logo">XAITOPIA</span><Candles/><small>MARKET</small><h2>Words that move <em>markets.</em></h2><p>Research, market structure and the Pine Script and MQL5 models behind it.</p><i>ENTER MARKET →</i></button>
-    <button className="half" data-mode="page" onClick={()=>pick('page')}><small>PAGE</small><h2>Poems for the hours <em>in between.</em></h2><p className="verse">{(p.poems[0]?.excerpt||[]).slice(0,2).map((l,i)=><span key={i}>{l}<br/></span>)}</p><i>ENTER PAGE →</i></button>
+    <button className="half" data-mode="page" onClick={()=>pick('page')}><small>MEMORIES</small><h2>Poems for the hours <em>in between.</em></h2><p className="verse">{((p.poems[0]||poems[0])?.excerpt||[]).slice(0,2).map((l,i)=><span key={i}>{l}<br/></span>)}</p><i>ENTER MEMORIES →</i></button>
   </div>);
   const mk=mode==='market';
   const ov=sw&&(<div className="sweep" data-mode={sw} aria-hidden="true">{sw==='market'?<Candles/>:<p>At 2 AM the world closes its eyes<br/>and pretends it cannot hear you.</p>}</div>);
-  const head=(<header><Link href="/" className="brand" onClick={()=>{try{localStorage.removeItem('mode');}catch(e){}}}><img src="/logo.png" alt="Xaitopia Research" className="bm"/><span><b>Xaitopia Research</b><i>Emmanuel Chukwu</i></span></Link>
+  const head=(<header><Link href="/" className="brand" onClick={()=>{try{localStorage.removeItem('mode');}catch(e){}}}><img src="/logo.png" alt={mk?'Xaitopia Research':'Xaitopia'} className="bm"/><span><b>{mk?'Xaitopia Research':'Xaitopia'}</b><i>Emmanuel Chukwu</i></span></Link>
     <Nav mode={mk?'market':'page'}/>
-    <div className="toggle"><button aria-pressed={mk} onClick={()=>pick('market')}>MARKET</button><button aria-pressed={!mk} onClick={()=>pick('page')}>PAGE</button></div></header>);
+    <div className="toggle"><button aria-pressed={mk} onClick={()=>pick('market')}>MARKET</button><button aria-pressed={!mk} onClick={()=>pick('page')}>MEMORIES</button></div></header>);
   const move=e=>setM([e.clientX,e.clientY]);
   if(mk){const [L,...r]=p.articles;return(<div className="wrap" data-mode="market" onMouseMove={move}>{head}{ov}
     <Tape/><Ticker articles={p.articles}/><div className="xh v" style={{left:m[0]}}/><div className="xh h" style={{top:m[1]}}/>
@@ -50,5 +49,5 @@ export default function Site({poems,articles,fiction}){
     {L&&<div className="poem"><h1 style={{transform:`translate(${(m[0]-640)/70}px,${(m[1]-380)/90}px)`}}>{L.title}</h1>
       {L.excerpt.map((l,i)=><div key={i} style={{opacity:Math.max(.15,1-i*.17)}}>{l}</div>)}<Link className="btn" href={`/poetry/${L.slug}`}>READ THE POEM →</Link></div>}
     <aside><small>MORE POEMS</small>{r.slice(0,3).map(x=><Link className="row" key={x.slug} href={`/poetry/${x.slug}`}>{x.title}</Link>)}
-      {f&&<><small className="gap">FICTION</small><Link className="row it" href={`/fiction/${f.slug}`}>{f.title}</Link></>}</aside></section><Footer/></div>);
+      {f&&<><small className="gap">FICTION</small><Link className="row it" href={`/fiction/${f.slug}`}>{f.title}</Link></>}</aside></section><Footer mode="page"/></div>);
 }

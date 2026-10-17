@@ -9,5 +9,6 @@ export default function ContactForm(){const [st,setSt]=useState('idle');
     <label>Name<input name="name" required/></label><label>Email<input type="email" name="email" required/></label>
     <label>What do you need?<select name="topic">{TOPICS.map(t=><option key={t}>{t}</option>)}</select></label>
     <label>Message<textarea name="message" rows="6" required/></label>
+    <p className="nlmsg">By sending this you agree to the <a href="/privacy" style={{color:'var(--ac)'}}>Privacy Policy</a>.</p>
     <button className="btn" type="submit" disabled={st==='sending'}>{st==='sending'?'SENDING...':'SEND MESSAGE →'}</button>
     {st==='error'&&<p className="nlmsg">Something went wrong. Please email xaitopia@gmail.com instead.</p>}</form>);}
