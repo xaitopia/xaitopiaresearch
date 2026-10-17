@@ -6,6 +6,7 @@ export default function Privacy(){return(<Shell mode="market"><main className="r
 <h2>Who I am</h2><p>This site is run by Emmanuel Chukwu, trading as Xaitopia Research. You can reach me at <a href="mailto:xaitopia@gmail.com">xaitopia@gmail.com</a> about anything in this policy.</p>
 <h2>What I collect</h2>
 <p><b>Contact form.</b> If you send a message, I receive your name, email address, the topic you pick and your message. I use them only to reply to you and to keep a record of the enquiry.</p>
+<p><b>Comments.</b> If you leave a comment on a poem, article or book, I receive the comment, any name or email you choose to give, and the page you were reading. Comments are private: they are not shown on the site, and only I read them. They are stored by Netlify and may be sent to my email.</p>
 <p><b>Technical data.</b> Like any website, the host records basic technical data when you visit, such as your IP address, browser type and the pages requested. I do not use this to identify you.</p>
 <p><b>On your device.</b> The site stores two small items in your browser: whether you chose Market or Memories mode, and which pieces were last featured, so that the featured pieces change on each visit. They stay on your device. I do not set tracking cookies, and I do not currently run analytics or advertising trackers.</p>
 <h2>Who else handles data</h2>
