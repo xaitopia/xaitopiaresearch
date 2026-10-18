@@ -31,6 +31,6 @@ Locked in deep passion, she shifted into her wolf form. Revealing what she truly
 
 The morning sun touched her face, waking up. She feared the events of the previous night were all a dream. But when she turned she saw him lying beside her, handsome as the first time she set her eyes on him. He seems to sense her eyes on him as he opens his eyes as well. He gave her a smile and reached over to kiss her lips. He was sweet, he tasted sweet.
 
-He stood from the bed and walked towards the bathroom without saying a word. He stayed a few minutes and walked out fully dressed. She asked him if he was going out and he told her he had business to attend to, he told her to feel comfortable and see his place as her place. She layed back in bed as he walked out.
+He stood from the bed and walked towards the bathroom without saying a word. He stayed a few minutes and walked out fully dressed. She asked him if he was going out and he told her he had business to attend to, he told her to feel comfortable and see his place as her place. She lay back in bed as he walked out.
 
 A strange feeling was starting to grow inside of her, he had marked her to be his. She would have no choice but to do his bidding for his pup now grows inside of her.

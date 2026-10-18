@@ -2,7 +2,7 @@
 title: "The Market at Seven"
 date: 2024-06-04
 draft: false
-tags: ["Nigeria", "Onitsha", "Market", "Childhood"]
+tags: ["Nigeria", "Ugwueke", "Market", "Childhood"]
 categories: ["Poetry"]
 description: "A childhood memory of a Nigerian morning market — the noise, the light, the women who ran everything."
 readTime: "3 min read"

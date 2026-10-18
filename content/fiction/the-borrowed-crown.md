@@ -9,7 +9,7 @@ description: "Amaka hides her humble background at an elite school, walking a fu
 shelf: "ya"
 author: "Emmanuel Chukwu"
 ---
-> “One person pretends to be rich, yet has nothing;another pretends to be poor, yet has great wealth.”— Proverbs 13:7
+> “One person pretends to be rich, yet has nothing; another pretends to be poor, yet has great wealth.”— Proverbs 13:7
 
 ## Part One: The Spark of the Lie
 
@@ -657,4 +657,4 @@ She was, precisely and completely, herself.
 
 And for the first time in three weeks, this was enough.
 
-*“One person pretends to be rich, yet has nothing;another pretends to be poor, yet has great wealth.”— Proverbs 13:7*
+*“One person pretends to be rich, yet has nothing; another pretends to be poor, yet has great wealth.”— Proverbs 13:7*

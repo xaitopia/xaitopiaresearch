@@ -15,6 +15,6 @@ There is a specific freedom in this — in eating alone at midnight in a lit-up 
 
 The woman behind the counter is watching a video on her phone. Someone is arguing outside, briefly, then not. A ceiling fan moves the air without improving it. I am not lonely. That is the thing I want you to understand. Loneliness is the ache for company you do not have. This is something else entirely — this is the pleasure of your own company, discovered late, at a table for one, at an hour when the city has stopped performing.
 
-The fish is good. The Coke is cold. Outside, Lagos continues without me.
+The fish is good. The Coke is cold. Outside, Ibadan continues without me.
 
 This is what rest looks like when you finally stop confusing it with sleep.

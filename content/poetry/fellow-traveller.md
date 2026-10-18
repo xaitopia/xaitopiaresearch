@@ -13,7 +13,7 @@ The sky gave nothing and then gave it all —
 
 no warning, just the sudden wall of rain
 
-on Lagos streets where we had nowhere sane
+on Ibadan streets where we had nowhere sane
 
 to go, and so we pressed beneath one stall.
 

@@ -9,7 +9,7 @@ description: "Musa, a boy in Kano who never stops running, breaks his grandmothe
 shelf: "children"
 author: "Emmanuel Chukwu"
 ---
-> "Whoever conceals their sins does not prosper,but the one who confesses and renounces them finds mercy."— Proverbs 28:13
+> "Whoever conceals their sins does not prosper, but the one who confesses and renounces them finds mercy."— Proverbs 28:13
 
 ## Chapter One: The Boy with the Fast Feet
 
@@ -961,7 +961,7 @@ He ate five.
 
 ***
 
-*"Whoever conceals their sins does not prosper,but the one who confesses and renounces them finds mercy."— Proverbs 28:13*
+*"Whoever conceals their sins does not prosper, but the one who confesses and renounces them finds mercy."— Proverbs 28:13*
 
 ## Glossary
 

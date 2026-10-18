@@ -117,3 +117,6 @@ header nav{align-items:center}
 .adult{border:1px solid var(--ac);border-radius:8px;padding:12px 16px;font:12px/1.6 'IBM Plex Mono',monospace;color:var(--ac);margin:0 0 28px}
 .shelf{font:400 clamp(24px,3vw,30px) 'Playfair Display',serif;margin:48px 0 6px}.shelfd{font:12px 'IBM Plex Mono',monospace;color:var(--mu);margin:0 0 16px}
 .cb{margin-top:60px;padding-top:28px;border-top:1px solid var(--ln)}.cb .cbn{font:12px/1.6 'IBM Plex Mono',monospace;color:var(--mu);margin:0 0 18px}.cbd{font:italic 17px/1.6 'Playfair Display',serif}
+
+.sharebar{margin-top:44px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}.sharebar small{margin:0 6px 0 0}
+.sh{font:11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ac);border:1px solid var(--ln);border-radius:20px;padding:10px 14px;background:none;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}.sh:hover{border-color:var(--ac)}

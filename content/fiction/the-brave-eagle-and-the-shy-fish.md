@@ -9,7 +9,7 @@ description: "A brave eagle and a shy fish set out to make a wish on a magical p
 shelf: "children"
 author: "Emmanuel Chukwu"
 ---
-Once upon time, in a world where animals could talk, there lived a brave eagle named Chukwudi and a shy fish named Adekunle. Chukwudi was known for his courage and strength, while Adekunle was known for his quiet nature and love for solitude. They lived in different worlds - Chukwudi in the sky, and Adekunle in the water. But destiny had a unique adventure planned for them that would turn them into the best of friends.
+Once upon a time, in a world where animals could talk, there lived a brave eagle named Chukwudi and a shy fish named Adekunle. Chukwudi was known for his courage and strength, while Adekunle was known for his quiet nature and love for solitude. They lived in different worlds - Chukwudi in the sky, and Adekunle in the water. But destiny had a unique adventure planned for them that would turn them into the best of friends.
 
 One sunny day, Chukwudi was soaring high in the sky, his sharp eyes scanning the ground below. Suddenly, he spotted a shiny object glittering in the river. Curious, he swooped down to investigate. As he neared the water, he saw Adekunle, the shy fish, swimming around the shiny object. Chukwudi, being brave and friendly, called out, "Hello there, little fish! What's that shiny thing you're playing with?"
 
@@ -35,7 +35,7 @@ Chukwudi and Adekunle looked at each other in surprise. "What did we wish for?" 
 
 Everything seemed the same, but something had changed. Chukwudi could now dive into the water without getting his wings wet, and Adekunle could now breathe outside water. They had wished for the ability to enter each other's world!
 
-From that day forward, Chukwudi and Adekunle spent their days exploring the sky and the river together. They shared many adventures, their bond growing stronger with each one. The brave eagle and the shy fish, despite their differences, become the best of friends.
+From that day forward, Chukwudi and Adekunle spent their days exploring the sky and the river together. They shared many adventures, their bond growing stronger with each one. The brave eagle and the shy fish, despite their differences, became the best of friends.
 
 And so, the story of Chukwudi and Adekunle spread across the land, teaching everyone that friendship knows no bounds, and that bravery and kindness can turn even the most unlikely into the best of friends.
 

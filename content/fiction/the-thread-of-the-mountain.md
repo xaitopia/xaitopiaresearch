@@ -543,7 +543,7 @@ Temi sat down beside the mat. He was aware of his own hands — the left holding
 
 The beginning of a text.
 
-"I did something," Temi said. He did not look at his grandfather's face. He looked at the shuttle in his hand. "In Lagos. A big order. I programmed yout pattern. And then I—" He stopped. He felt the sourness shift in his chest — it had been sitting there since the Balogun market, since the wrapper came apart in the nail, and it had travelled with him through Oshodi and Ore and Akure and eleven kilometres of red laterite road. "I removed the Thread of Truth from the programme. For a bonus. The cloth looked right from the outside and it held nothing on the inside, and it fell apart in the market when a woman was carrying her baby."
+"I did something," Temi said. He did not look at his grandfather's face. He looked at the shuttle in his hand. "In Lagos. A big order. I programmed your pattern. And then I—" He stopped. He felt the sourness shift in his chest — it had been sitting there since the Balogun market, since the wrapper came apart in the nail, and it had travelled with him through Oshodi and Ore and Akure and eleven kilometres of red laterite road. "I removed the Thread of Truth from the programme. For a bonus. The cloth looked right from the outside and it held nothing on the inside, and it fell apart in the market when a woman was carrying her baby."
 
 The silence in the compound was very large.
 
